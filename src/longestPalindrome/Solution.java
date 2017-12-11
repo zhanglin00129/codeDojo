@@ -25,7 +25,7 @@ public class Solution {
         int strLen = s.length();
 
         for (int palindromeLength = 1; palindromeLength <= strLen; palindromeLength++) {
-            for (int start = 0; start < strLen - palindromeLength; start++) {
+            for (int start = 0; start <= strLen - palindromeLength; start++) {
                 if (palindromeLength > maxLength && isPalindrome(s, start, start + palindromeLength - 1)) {
                     maxLength = palindromeLength;
                     maxStart = start;
